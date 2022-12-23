@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Paolo's Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      //Script for smooth animation
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 700, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+</head>
+<body>
+    <!--navigation bar-->
+    <div class="header">
+        <div class="logo">
+          Paolo Luis Ramirez
+        </div>
+        <div class="menu">
+            <a href="#anchorhome" class="link">
+                <div class="home">Home</div>
+              </a>
+          <a href="#anchorabt" class="link">
+            <div class="title">About</div>
+          </a>
+          <a href="#anchorhobbies" class="link">
+            <div class="title">Hobbies</div>
+          </a>
+        </div>
+      </div>
+      <!--quote-->
+    <div id="anchorhome">
+      <h2>---------------</h2>
+    </div>
+    <div class="quote-block">
+      <p class="quote">
+        "Simplicity is the ultimate sophistication" - Leonardo Da Vinci
+      </p>
+    </div>
+      <!--about-->
+    <div id="anchorabt">
+      <h2>---------------</h2>
+    </div>
+    <div id="aboutme">
+        <h2>About me</h2>
+    </div>
+    <div id="image">
+      <img src="Glam (3).jpg" align="center" alt="myself" width="392" height="508"/><br><br>
+  </div>
+    <div id="aboutmedetails">
+        <p>Hi! Welcome to my website, I am Paolo Luis R. Ramirez and <br>from section InTech 2-A, currently a 2nd year BS-IT Student <br> in Ateneo de Davao University.
+          <br>I am currently interested in learning being a Front-end Developer <br>because I enjoy designing websites.
+        </p>
+    </div>
+    <!--Hobbies-->
+    <div id="anchorhobbies">
+      <h2>---------------</h2>
+    </div>
+    <div id="hobbies">
+        <h2>Hobbies</h2>
+    </div>
+    <div id="hobbyimg">
+      <img src="RAMENSKIES.PNG" align="center" alt="deskmat" width="auto" height="508"/><br><br><br>
+    </div>
+    <div id="hobbiesdetails">
+      <p>Welcome to my hobbies section! My hobbies that I currently enjoy as a way to relief stress are:<br><br>
+        ◉ Collecting and building Mechanical Keyboards<br>
+        ◉ Designing deskmats<br>
+        ◉ Playing video games with friends!<br>
+        ◉ Playing drums with my band<br>
+        ◉ and lastly eating because it soothes my soul.
+      </p>
+    </div>
+    <div id="space">
+      <h2>---------------</h2>
+    </div>
+    <!--<iframe src="center.html" name ="a" width="100%" height="1200" frameborder="0" scrolling="no"></iframe>-->
+</body>
+</html>

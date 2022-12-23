@@ -1,0 +1,151 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800);
+*{
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  /*outline: solid 2px pink;*/
+}
+html, body {
+  font-family: 'Dosis';
+  font-weight: 300;
+  background-image: url("background 1.svg");
+  background-repeat:no-repeat;
+  min-height: 150vh;
+}
+.header {
+  width: 100%;
+  border-bottom: 5px solid black;
+  text-align: right;
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+.logo { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 32px;
+    font-weight: 800;
+    padding: 26px;
+    border-right: 5px solid black;
+}
+.link {
+  display: inline-block;
+  padding: 15px 0;
+  margin: 15px 25px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #0f0f0f;
+  font-weight: 500;
+  font-size: 25px;
+  right: 90px;
+}
+.link:hover{
+    transform: scale(1.3);
+    transition: 300ms;
+}
+.button{
+  display: inline-block;
+  padding: 15px 0;
+  margin: 15px 25px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #0f0f0f;
+  font-weight: 500;
+  font-size: 25px;
+  right: 90px;
+}
+.button:hover{
+  transform: scale(1.3);
+  transition: 300ms;
+}
+#anchorhome{
+  position: relative;
+  top: 1px;
+  visibility: hidden;
+}
+
+.quote-block {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote {
+  font-size: 40px;
+}
+#anchorabt{
+  position: relative;
+  top: 50px;
+  visibility: hidden;
+}
+
+#aboutme{
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#aboutme h2 {
+  font-size: 40px;
+}
+
+#image{
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#aboutmedetails{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 23px;
+  height: 480px;
+}
+#anchorhobbies{
+  position: relative;
+  top: 10px;
+  visibility: hidden;
+}
+
+#hobbies{
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hobbyimg{
+  margin-bottom: 70px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hobbiesdetails{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 23px;
+}
+
+#hobbies h2{
+  font-size: 40px;
+}
+
+#space{
+  position: relative;
+  top: 300px;
+  visibility: hidden;
+}
+img{
+  border-radius: 1%;
+}
+
